@@ -1,4 +1,4 @@
-# volume_manager
+# storage_manager
 
 ## 목차
 1. [스토리지 기본개념](#스토리지-기본개념)
