@@ -37,7 +37,17 @@ NAS 또한 SAN과 마찬가지로, 네트워크를 기반하여 스토리지를 
 NAS를 사용하기 위해 일반적으로 사용하는 프로토콜은 NFS(Network File System), SMB/CIFS(Server Message Block/Common Internet File System), FTP(File Transfer Protocol) 등이 있다.
 
 ## 프로젝트 개요
+본 프로젝트는 접근 가능한 다양한 스토리지를 애플리케이션 서버에 마운트, 언마운트하고 헬스 체크 등 다양한 기능을 제공하기 위한 웹서비스를 위해 API를 제공하는 프로젝트이다.
+
 
 ## 제공 기능
+- 스토리지 정보 조회
+- 스토리지 액세스 테스트
+- 스토리지 마운트
+- 스토리지 언마운트
+- 스토리지 헬스 체크
+- 스토리지 현황 체크
+
+
 
 ## API 문서
