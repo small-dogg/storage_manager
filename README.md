@@ -25,16 +25,16 @@ SAN 방식은 여러 스토리지를 하나의 네트워크에 연결시키고, 
 네트워크 영역으로 묶인 스토리지들은 SAN을 통해 중앙화 되고, 중앙화된 스토리지는 `LV(Logical Volume;논리 볼륨)`을 형성하여, 서버가 필요한 공간(용량)만큼
 할당할 수 있다. 그리고 이 할당된 LV는 `LUN(Logical Unit Number)`이라는 고유 식별번호를 통해 논리적으로 생성된 볼륨을 마치 디스크처럼 쓸 수 있다.
 
-SAN을 사용하기위해 일반적으로 사용하는 프로토콜은 iSCSI, 파이버 채널(Fiber Channel), iSER(iSCSL Extensions for RDMA)이다.
+SAN을 사용하기위해 일반적으로 사용하는 프로토콜은 `iSCSI`, `파이버 채널`(Fiber Channel), `iSER`(iSCSL Extensions for RDMA)이다.
 
 또한, 문서 공유, 자료 공유 등 파일을 동시에 수정하고 공유하는 등의 행위가 늘어남에 따라, 데이터를 물리적으로 전달 및 공유하는 행위가 늘어나게 되고, 전달
 과정에서의 데이터 손실, 데이터 관리 등의 문제가 늘어나게 되었다. 추가로 공유 데이터가 점차 늘어나게 되다보니 공유할 데이터를 관리할 저장소가 필요하게 되었다.
-이러한 문제를 해결하기 위해, NAS(Network-Attached Storage;네이트워크 결합 스토리지)가 등장하였다.
+이러한 문제를 해결하기 위해, `NAS(Network-Attached Storage;네이트워크 결합 스토리지)`가 등장하였다.
 
 NAS 또한 SAN과 마찬가지로, 네트워크를 기반하여 스토리지를 제공한다. 다만 광 케이블 통신을 일반적으로 사용하는 SAN과 달리 이더넷을 통해 연결하는 방식을 취한다.
 일반 가정에서도 손쉽게 NAS를 구매하면 공유기와 같은 네트워크 장치를 통해 NAS를 연결하고 접근할 수 있다.
 
-NAS를 사용하기 위해 일반적으로 사용하는 프로토콜은 NFS(Network File System), SMB/CIFS(Server Message Block/Common Internet File System), FTP(File Transfer Protocol) 등이 있다.
+NAS를 사용하기 위해 일반적으로 사용하는 프로토콜은 `NFS(Network File System)`, `SMB/CIFS(Server Message Block/Common Internet File System)`, `FTP(File Transfer Protocol)` 등이 있다.
 
 ## 프로젝트 개요
 본 프로젝트는 접근 가능한 다양한 스토리지를 애플리케이션 서버에 마운트, 언마운트하고 헬스 체크 등 다양한 기능을 제공하기 위한 웹서비스를 위해 API를 제공하는 프로젝트이다.
